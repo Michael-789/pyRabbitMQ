@@ -17,7 +17,10 @@ if __name__ == '__main__':
 
 
 rabbitMQ = RabbitMQHandler.RabbitMQHandler()
-rabbitMQ.recieve()
+exchanges = ["LcmFusedEntity", "LcmEntity"]
+queues = ["LochmamFusedEntity", "LochmamEntity"]
+rabbitMQ.recieve(exchanges,queues)
+#rabbitMQ.recieve2()
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
